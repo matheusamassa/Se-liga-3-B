@@ -1,70 +1,91 @@
-/* Estilo geral para o corpo da página */
+/* Definindo a fonte padrão e a cor de fundo */
 body {
-    font-family: Arial, sans-serif; /* Define a fonte padrão do site */
-    background-color: #f4f4f4; /* Cor de fundo da página */
-    margin: 0; /* Remove a margem padrão do navegador */
-    padding: 0; /* Remove o preenchimento padrão do navegador */
+    font-family: Arial, sans-serif; /* Fonte padrão para o texto */
+    background-color: #1280ff; /* Cor de fundo clara */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimento padrão */
+    display: flex; /* Usando flexbox para centralizar */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    height: 100vh; /* Faz com que a altura ocupe 100% da tela */
 }
 
-/* Estilo para o cabeçalho */
-header {
-    background-color: #333; /* Fundo escuro para o cabeçalho */
-    color: white; /* Texto branco no cabeçalho */
-    text-align: center; /* Centraliza o texto no cabeçalho */
-    padding: 20px; /* Adiciona espaço ao redor do conteúdo dentro do cabeçalho */
-}
-
-/* Estilo para o corpo do conteúdo principal */
-main {
-    padding: 20px; /* Adiciona espaço ao redor do conteúdo principal */
-}
-
-/* Estilo para a lista de navegação */
-nav ul {
-    list-style-type: none; /* Remove os marcadores de lista */
-    padding: 0; /* Remove o preenchimento padrão da lista */
-}
-
-/* Estilo para os itens da lista de navegação */
-nav ul li {
-    display: inline; /* Exibe os itens da lista na horizontal */
-    margin-right: 10px; /* Espaço entre os itens */
-}
-
-/* Estilo para os links de navegação */
-nav ul li a {
-    color: #333; /* Cor do texto dos links */
-    text-decoration: none; /* Remove o sublinhado dos links */
-}
-
-/* Estilo para o rodapé */
-footer {
-    background-color: #333; /* Fundo escuro para o rodapé */
-    color: white; /* Texto branco no rodapé */
-    text-align: center; /* Centraliza o texto no rodapé */
-    padding: 10px; /* Adiciona espaço ao redor do conteúdo dentro do rodapé */
-    position: fixed; /* Fixa o rodapé na parte inferior da tela */
-    bottom: 0; /* Alinha o rodapé ao fundo da tela */
-    width: 100%; /* Faz com que o rodapé ocupe toda a largura da tela */
-}
-
-/* Classe para destacar um texto */
-.highlight {
-    color: red; /* Cor vermelha para o texto */
-    font-weight: bold; /* Deixa o texto em negrito */
-}
-
-/* Estilo para uma seção específica com o id 'content' */
-#content {
-    background-color: #fff; /* Fundo branco para a seção */
-    padding: 15px; /* Espaço interno para a seção */
-    border-radius: 5px; /* Bordas arredondadas */
-}
-
-/* Estilo para a seção de explicações */
-#explicacoes {
-    margin-top: 30px; /* Espaço acima da seção de explicações */
-    padding: 20px; /* Preenchimento dentro da seção */
-    background-color: #eaeaea; /* Fundo cinza claro */
+/* Criando uma "margem" azul ao redor do conteúdo centralizado */
+.container {
+    background-color: rgb(27, 149, 248); /* Cor de fundo do conteúdo centralizado */
+    padding: 20px; /* Preenchimento do conteúdo */
+    margin: 20px; /* Margem externa azul */
     border-radius: 8px; /* Bordas arredondadas */
+    border: 5px solid #003366; /* Bordas azul escuro */
+    width: 80%; /* Largura do conteúdo centralizado */
+    max-width: 800px; /* Largura máxima para o conteúdo */
+}
+
+/* Cabeçalho do site */
+header {
+    background-color: #333; /* Cor de fundo escura */
+    color: white; /* Texto branco */
+    text-align: center; /* Centraliza o conteúdo */
+    padding: 20px; /* Preenchimento ao redor do conteúdo */
+}
+
+/* Corpo principal do conteúdo */
+main {
+    padding: 20px; /* Preenchimento dentro do conteúdo */
+}
+
+/* Seção de informações do aluno */
+#informacoes {
+    background-color: #33a7f5; /* Cor de fundo branco para destacar */
+    padding: 15px; /* Preenchimento da seção */
+    margin-bottom: 20px; /* Espaço abaixo da seção */
+    border-radius: 8px; /* Bordas arredondadas */
+}
+
+/* Lista de informações */
+#informacoes ul {
+    list-style-type: none; /* Remove o marcador de lista */
+    padding: 0; /* Remove o preenchimento */
+}
+
+#informacoes li {
+    margin-bottom: 10px; /* Espaço entre os itens da lista */
+}
+
+/* Seção de explicação do projeto */
+#explicacao {
+    background-color: #eaeaea; /* Cor de fundo cinza claro */
+    padding: 20px; /* Preenchimento dentro da seção */
+    border-radius: 8px; /* Bordas arredondadas */
+}
+
+/* Rodapé do site */
+footer {
+    background-color: #333; /* Cor de fundo escura */
+    color: white; /* Texto branco */
+    text-align: center; /* Centraliza o texto */
+    padding: 10px; /* Preenchimento do rodapé */
+    position: fixed; /* Fixa o rodapé no fundo da tela */
+    bottom: 0; /* Alinha ao fundo */
+    width: 100%; /* Faz com que ocupe toda a largura da tela */
+}
+
+/* Estilos adicionais para a explicação do código */
+#explicacoes-code {
+    background-color: #fff; /* Cor de fundo branco para destacar */
+    padding: 20px; /* Preenchimento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    margin-top: 30px; /* Espaço acima */
+}
+
+#explicacoes-code h3 {
+    color: #333; /* Cor do título da explicação */
+}
+
+#explicacoes-code ul {
+    margin-top: 10px; /* Espaço acima da lista */
+}
+
+#explicacoes-code li {
+    margin-bottom: 10px; /* Espaço entre os itens da lista */
 }

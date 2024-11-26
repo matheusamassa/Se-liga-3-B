@@ -4,53 +4,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo de Layout de Site</title>
+    <title>Projeto de Web - Timbu Velho Se liga</title>
     <!-- Link para o arquivo CSS externo -->
-    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- Container para centralizar o conteúdo e aplicar a margem azul -->
+    <div class="container">
+        <!-- Cabeçalho do site -->
+        <header>
+            <h1>Se Liga</h1>
+            <h1>Escola Timbu Velho</h1>
+            <p>Projeto realizado por Matheus Costa Bezerra Da Silva</p>
+        </header>
 
-    <!-- Cabeçalho do site -->
-    <header>
-        <h1>Bem-vindo ao Site!</h1>
-        <!-- O <header> contém o título principal da página -->
-    </header>
+        <!-- Corpo principal do conteúdo -->
+        <main>
+            <!-- Informações do aluno e professor -->
+            <section id="informacoes">
+                <h2>Informações</h2>
+                <ul>
+                    <li><strong>Aluno:</strong> Matheus Costa Bezerra Da Silva</li>
+                    <li><strong>Professor:</strong> Ademir</li>
+                    <li><strong>Série/Turma:</strong> 3B</li>
+                    <li><strong>Data de entrega:</strong> 26/11/2024</li>
+                </ul>
+            </section>
 
-    <!-- Corpo principal do conteúdo -->
-    <main>
-        <!-- Navegação do site -->
-        <nav>
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
-        <!-- A navegação <nav> contém links para outras páginas do site -->
-        
-        <!-- Seção sobre o conteúdo -->
-        <section id="content">
-            <h2>Sobre Nós</h2>
-            <p>Este é um exemplo de um site simples com um layout básico.</p>
-            <p class="highlight">Veja como usamos classes e IDs para estilizar elementos específicos.</p>
-        </section>
-        
-        <!-- Seção de explicação sobre o aprendizado -->
-        <section id="explicacoes">
-            <h2>O que Aprendi com este Projeto</h2>
-            <p>Com este projeto, aprendi como estruturar um site básico utilizando HTML para definir os elementos e CSS para aplicar estilos visuais. Com a separação do conteúdo (HTML) e da apresentação (CSS), pude entender a importância de organizar o código de forma eficiente, além de aprender como utilizar classes e IDs para aplicar estilos personalizados. O aprendizado inclui como modificar cores, fontes, margens e preenchimentos, o que permite criar sites mais organizados e visualmente atraentes. A utilização de tags semânticas como <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, e <code>&lt;nav&gt;</code> também facilita a compreensão e a manutenção do código.</p>
-        </section>
+            <!-- Explicação do código -->
+            <section id="explicacao">
+                <h2>O que aprendi com o projeto</h2>
+                <p>Com este projeto, aprendi como estruturar um site básico usando HTML e CSS. O HTML foi usado para organizar o conteúdo e o CSS para estilizar a página. O uso de tags semânticas como <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code> e <code>&lt;footer&gt;</code> melhora a legibilidade do código e facilita a manutenção do site. Além disso, aprendi a usar classes e IDs para aplicar estilos específicos a determinados elementos.</p>
+            </section>
 
-    </main>
+            <!-- Explicação do que cada parte do código faz -->
+            <section id="explicacoes-code">
+                <h2>Explicação do Código</h2>
+                <p>Abaixo, explico o que cada parte do código HTML e CSS faz:</p>
+                <h3>Código HTML:</h3>
+                <ul>
+                    <li><strong>&lt;!DOCTYPE html&gt;</strong>: Declara que o documento está usando HTML5.</li>
+                    <li><strong>&lt;html lang="pt-br"&gt;</strong>: Define o idioma da página como português do Brasil.</li>
+                    <li><strong>&lt;head&gt;</strong>: Contém informações sobre a página, como o título e o link para o arquivo CSS.</li>
+                    <li><strong>&lt;body&gt;</strong>: Contém o conteúdo visível da página. Aqui, organizamos o cabeçalho, o corpo e o rodapé.</li>
+                    <li><strong>&lt;header&gt;</strong>: A primeira seção da página, onde colocamos o título da escola e o nome do aluno.</li>
+                    <li><strong>&lt;main&gt;</strong>: O conteúdo principal, dividido em seções, como informações do aluno e a explicação do que foi aprendido.</li>
+                    <li><strong>&lt;footer&gt;</strong>: A seção de rodapé, onde incluímos o copyright.</li>
+                    <li><strong>&lt;ul&gt; e &lt;li&gt;</strong>: Usados para criar uma lista de informações, como nome do aluno e data de entrega.</li>
+                </ul>
+                <h3>Código CSS:</h3>
+                <ul>
+                    <li><strong>body {}</strong>: Define a fonte, cor de fundo, e remove margens e preenchimentos padrão do navegador.</li>
+                    <li><strong>header {}</strong>: Aplica estilo ao cabeçalho, como fundo escuro, texto branco, centralização e preenchimento.</li>
+                    <li><strong>#informacoes {}</strong>: Estilo da seção que contém as informações do aluno, com fundo branco, bordas arredondadas, e preenchimento.</li>
+                    <li><strong>#explicacao {}</strong>: Estilo para a seção de explicação do projeto, com fundo cinza claro e bordas arredondadas.</li>
+                    <li><strong>footer {}</strong>: Aplica estilo ao rodapé, tornando-o fixo na parte inferior da tela, com fundo escuro e texto branco.</li>
+                </ul>
+            </section>
+        </main>
 
-    <!-- Rodapé do site -->
-    <footer>
-        <p>&copy; 2024 Todos os direitos reservados.</p>
-        <!-- O <footer> contém informações sobre copyright e geralmente aparece no final da página -->
-    </footer>
-
+        <!-- Rodapé do site -->
+        <footer>
+            <p>&copy; 2024 - Escola Timbu Velho. Todos os direitos reservados.</p>
+        </footer>
+    </div>
 </body>
 
 </html>
