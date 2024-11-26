@@ -1,0 +1,70 @@
+/* Estilo geral para o corpo da página */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte padrão do site */
+    background-color: #f4f4f4; /* Cor de fundo da página */
+    margin: 0; /* Remove a margem padrão do navegador */
+    padding: 0; /* Remove o preenchimento padrão do navegador */
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background-color: #333; /* Fundo escuro para o cabeçalho */
+    color: white; /* Texto branco no cabeçalho */
+    text-align: center; /* Centraliza o texto no cabeçalho */
+    padding: 20px; /* Adiciona espaço ao redor do conteúdo dentro do cabeçalho */
+}
+
+/* Estilo para o corpo do conteúdo principal */
+main {
+    padding: 20px; /* Adiciona espaço ao redor do conteúdo principal */
+}
+
+/* Estilo para a lista de navegação */
+nav ul {
+    list-style-type: none; /* Remove os marcadores de lista */
+    padding: 0; /* Remove o preenchimento padrão da lista */
+}
+
+/* Estilo para os itens da lista de navegação */
+nav ul li {
+    display: inline; /* Exibe os itens da lista na horizontal */
+    margin-right: 10px; /* Espaço entre os itens */
+}
+
+/* Estilo para os links de navegação */
+nav ul li a {
+    color: #333; /* Cor do texto dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+/* Estilo para o rodapé */
+footer {
+    background-color: #333; /* Fundo escuro para o rodapé */
+    color: white; /* Texto branco no rodapé */
+    text-align: center; /* Centraliza o texto no rodapé */
+    padding: 10px; /* Adiciona espaço ao redor do conteúdo dentro do rodapé */
+    position: fixed; /* Fixa o rodapé na parte inferior da tela */
+    bottom: 0; /* Alinha o rodapé ao fundo da tela */
+    width: 100%; /* Faz com que o rodapé ocupe toda a largura da tela */
+}
+
+/* Classe para destacar um texto */
+.highlight {
+    color: red; /* Cor vermelha para o texto */
+    font-weight: bold; /* Deixa o texto em negrito */
+}
+
+/* Estilo para uma seção específica com o id 'content' */
+#content {
+    background-color: #fff; /* Fundo branco para a seção */
+    padding: 15px; /* Espaço interno para a seção */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+/* Estilo para a seção de explicações */
+#explicacoes {
+    margin-top: 30px; /* Espaço acima da seção de explicações */
+    padding: 20px; /* Preenchimento dentro da seção */
+    background-color: #eaeaea; /* Fundo cinza claro */
+    border-radius: 8px; /* Bordas arredondadas */
+}
