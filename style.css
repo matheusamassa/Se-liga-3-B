@@ -12,7 +12,7 @@ body {
 
 /* Criando uma "margem" azul ao redor do conteúdo centralizado */
 .container {
-    background-color: rgb(27, 149, 248); /* Cor de fundo do conteúdo centralizado */
+    background-color: rgb(6, 2, 247); /* Cor de fundo do conteúdo centralizado */
     padding: 20px; /* Preenchimento do conteúdo */
     margin: 20px; /* Margem externa azul */
     border-radius: 8px; /* Bordas arredondadas */
